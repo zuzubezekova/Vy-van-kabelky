@@ -1,0 +1,1 @@
+Webová stránka je venovaná originálnym vyšívaným kabelkám z macrame priadze, ktoré spájajú ručnú tvorbu, štýl a precízne detaily. Nájdete tu jedinečné kúsky vyrábané s láskou, inšpirácie, tipy na starostlivosť aj možnosť objednávky na mieru.
