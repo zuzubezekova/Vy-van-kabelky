@@ -3,20 +3,28 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Vyšívané Kabelky | Ručná Tvorba s Láskou</title>
+    <meta
+      name="description"
+      content="VK Studio – vyšívané kabelky z macrame priadze. Ručná výroba, originálne kúsky na mieru."
+    />
+    <title>VK Studio | Vyšívané kabelky</title>
+
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
       rel="stylesheet"
     />
+
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link
-      href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&family=Jost:wght@300;400;500&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;600&family=Jost:wght@300;400;500&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="assets/css/style.css" />
+
+    <link rel="stylesheet" href="style.css" />
   </head>
+
   <body>
-    <!-- HERO SEKCIA -->
+    <!-- HERO -->
     <header id="hero">
       <div class="hero-overlay">
         <div class="hero-content">
@@ -32,10 +40,11 @@
       <div class="hero-scroll-hint">↓</div>
     </header>
 
-    <!-- NAVIGÁCIA -->
+    <!-- NAVBAR -->
     <nav class="navbar navbar-expand-lg sticky-top" id="hlavna-nav">
       <div class="container">
         <a class="navbar-brand" href="#">✦ VK Studio</a>
+
         <button
           class="navbar-toggler"
           type="button"
@@ -44,27 +53,26 @@
         >
           <span class="navbar-toggler-icon"></span>
         </button>
+
         <div class="collapse navbar-collapse" id="mainNav">
           <ul class="navbar-nav gap-2 me-auto">
             <li class="nav-item">
-              <a class="nav-link" href="#o-nas">O nás</a>
+              <a class="nav-link" href="#o-teme">O téme</a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="#kolekcia">Kolekcia</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#tipy">Starostlivosť</a>
+              <a class="nav-link" href="#galeria">Galéria</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#novinky">Inšpirácie</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#objednavka">Objednávka</a>
+              <a class="nav-link" href="#o-nas">O nás</a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="#kontakt">Kontakt</a>
             </li>
           </ul>
+
           <button
             id="dark-mode-btn"
             class="btn btn-outline-secondary btn-sm ms-3"
@@ -76,222 +84,195 @@
     </nav>
 
     <main class="container my-5">
-      <!-- SEKCIA O NÁS -->
-      <section id="o-nas" class="mb-5 section-fade">
+      <!-- O TÉME -->
+      <section id="o-teme" class="mb-5 section-fade">
         <div class="row align-items-center g-5">
           <div class="col-12 col-md-6">
-            <span class="section-tag">Náš príbeh</span>
+            <span class="section-tag">O téme</span>
             <h2 class="section-title">
-              Tvorba, ktorá<br /><em>vychádza zo srdca</em>
+              Kabelka ako<br /><em>malé umelecké dielo</em>
             </h2>
+
             <p class="section-text">
-              Každá kabelka vzniká ručne v malom ateliéri, kde precíznosť a cit
-              pre materiál idú ruka v ruke. Používame priadzu macrame, aby sme vytvorili kúsky, ktoré sú nielen
-              krásne, ale aj trvanlivé.
+              Vyšívané kabelky z macrame priadze sú kombináciou tradičného
+              remesla a moderného dizajnu. Každý vzor vzniká postupne ručne, s
+              dôrazom na detail, aby výsledok pôsobil jemne, elegantne a zároveň
+              prakticky.
             </p>
+
             <p class="section-text">
-              Veríme, že módny doplnok môže byť umením. Preto každý vzor
-              navrhujeme originálne a každý steh robíme s plným záujmom o
-              výsledok.
+              Naším cieľom je vytvárať doplnky, ktoré vydržia roky. Používame
+              kvalitnú priadzu, pevné výstuže a starostlivo vyberáme farebné
+              kombinácie, aby každá kabelka bola jedinečná a ľahko kombinovateľná
+              s outfitom.
             </p>
-            <div class="stats-row">
-              <div class="stat-item">
-                <span class="stat-num">340+</span>
-                <span class="stat-label">spokojných zákazníčok</span>
-              </div>
-              <div class="stat-item">
-                <span class="stat-num">100%</span>
-                <span class="stat-label">ručná práca</span>
-              </div>
-              <div class="stat-item">
-                <span class="stat-num">∞</span>
-                <span class="stat-label">kombinácia vzorov</span>
-              </div>
-            </div>
           </div>
+
           <div class="col-12 col-md-6 text-center">
             <div class="img-frame">
               <img
                 src="assets/images/Kabelka7.png"
-                alt="Ateliér vyšívaných kabeliek"
+                alt="Ručne vyrábaná kabelka v ateliéri"
                 class="img-fluid rounded shadow-lg"
-                onerror="
-                  this.src =
-                    'https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=500&q=80';
-                  this.onerror = null;
-                "
+                onerror="this.src='https://images.unsplash.com/photo-1520975958225-72b2e0c7d43b?w=900&q=80';"
               />
             </div>
           </div>
         </div>
       </section>
 
-      <!-- SEPARATOR -->
       <div class="ornament-separator">✦ ✦ ✦</div>
 
-      <!-- SEKCIA KOLEKCIA -->
+      <!-- KARTY -->
       <section id="kolekcia" class="mb-5 section-fade">
         <div class="text-center mb-5">
-          <span class="section-tag">Naša ponuka</span>
-          <h2 class="section-title">Aktuálna<br /><em>Kolekcia</em></h2>
-          <p class="section-text mx-auto" style="max-width: 560px">
-            Každý kúsok je jedinečný. Prechádzajte kolekciou alebo vyhľadajte
-            podľa štýlu, farby alebo vzoru.
+          <span class="section-tag">Kolekcia</span>
+          <h2 class="section-title">Najobľúbenejšie<br /><em>Kúsky</em></h2>
+          <p class="section-text mx-auto" style="max-width: 600px">
+            Vybrali sme 3 najžiadanejšie typy kabeliek. Každý model sa dá upraviť
+            podľa farby, veľkosti aj výšivky.
           </p>
         </div>
 
-        <!-- Carousel ponuka -->
+        <div class="row g-4">
+          <div class="col-12 col-md-6 col-lg-4">
+            <div class="card custom-card shadow h-100">
+              <div class="ratio ratio-16x9">
+                <img
+                  src="assets/images/kabelka1.png"
+                  class="card-img-top object-fit-cover"
+                  alt="Crossbody kabelka"
+                />
+              </div>
+              <div class="card-body">
+                <h5 class="card-title">Crossbody kabelka</h5>
+                <p class="card-text">
+                  Praktický model na každý deň, ktorý sadne k šatám aj rifliam.
+                  Výšivka je vytvorená tak, aby kabelka pôsobila jemne a žensky.
+                  Vďaka pevnému dnu drží tvar aj pri bežnom nosení.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-12 col-md-6 col-lg-4">
+            <div class="card custom-card shadow h-100">
+              <div class="ratio ratio-16x9">
+                <img
+                  src="assets/images/kabelka2.png"
+                  class="card-img-top object-fit-cover"
+                  alt="Mini kabelka s výšivkou"
+                />
+              </div>
+              <div class="card-body">
+                <h5 class="card-title">Mini kabelka</h5>
+                <p class="card-text">
+                  Ideálna na oslavy, rande alebo večerné podujatia. Aj keď je
+                  malá, zmestí sa do nej všetko potrebné. Ručné stehy vytvárajú
+                  originálny vzor, ktorý sa nedá napodobniť sériovou výrobou.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-12 col-md-6 col-lg-4">
+            <div class="card custom-card shadow h-100">
+              <div class="ratio ratio-16x9">
+                <img
+                  src="assets/images/kabelka3.png"
+                  class="card-img-top object-fit-cover"
+                  alt="Shopper kabelka"
+                />
+              </div>
+              <div class="card-body">
+                <h5 class="card-title">Shopper taška</h5>
+                <p class="card-text">
+                  Väčší model vhodný na výlety, nákupy alebo do práce. Vnútorný
+                  priestor je dostatočne široký a spevnený. Kabelka je navrhnutá
+                  tak, aby zvládla aj vyššiu záťaž bez deformácie.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <div class="ornament-separator">✦ ✦ ✦</div>
+
+      <!-- CAROUSEL -->
+      <section id="galeria" class="mb-5 section-fade">
+        <div class="text-center mb-4">
+          <span class="section-tag">Galéria</span>
+          <h2 class="section-title">Ukážky<br /><em>výšiviek</em></h2>
+        </div>
+
         <div
-          id="kabelkyCarousel"
-          class="carousel slide mt-4"
+          id="galeriaCarousel"
+          class="carousel slide shadow rounded"
           data-bs-ride="carousel"
         >
-          <!-- Indikátory -->
           <div class="carousel-indicators">
             <button
               type="button"
-              data-bs-target="#kabelkyCarousel"
+              data-bs-target="#galeriaCarousel"
               data-bs-slide-to="0"
               class="active"
             ></button>
             <button
               type="button"
-              data-bs-target="#kabelkyCarousel"
+              data-bs-target="#galeriaCarousel"
               data-bs-slide-to="1"
             ></button>
             <button
               type="button"
-              data-bs-target="#kabelkyCarousel"
+              data-bs-target="#galeriaCarousel"
               data-bs-slide-to="2"
             ></button>
             <button
               type="button"
-              data-bs-target="#kabelkyCarousel"
+              data-bs-target="#galeriaCarousel"
               data-bs-slide-to="3"
-            ></button>
-            <button
-              type="button"
-              data-bs-target="#kabelkyCarousel"
-              data-bs-slide-to="4"
-            ></button>
-            <button
-              type="button"
-              data-bs-target="#kabelkyCarousel"
-              data-bs-slide-to="5"
-            ></button>
-            <button
-              type="button"
-              data-bs-target="#kabelkyCarousel"
-              data-bs-slide-to="6"
             ></button>
           </div>
 
-          <!-- Obsah carouselu -->
-          <div class="carousel-inner rounded shadow">
+          <div class="carousel-inner rounded">
             <div class="carousel-item active">
               <img
                 src="assets/images/kabelka1.png"
                 class="d-block w-100"
-                alt="Bážová kvietkovaná kabelka"
+                alt="Vyšívaná kabelka detail 1"
               />
-              <div
-                class="carousel-caption d-none d-md-block bg-dark bg-opacity-50 rounded p-3"
-              >
-                <h5>🧺 Béžová macrame kabelka</h5>
-                <p>Vyšívané kvety, jemný štýl — veľkosť S/M.</p>
-              </div>
-            </div>
-
-            <div class="carousel-item">
-              <img
-                src="assets/images/kabelka3.png"
-                class="d-block w-100"
-                alt="Hnedá kvietkovaná kabelka"
-              />
-              <div
-                class="carousel-caption d-none d-md-block bg-dark bg-opacity-50 rounded p-3"
-              >
-                <h5>🌿 Čierna macrame taška</h5>
-                <p>Kvetinový vzor, ideálna na bežné nosenie — malá.</p>
-              </div>
             </div>
 
             <div class="carousel-item">
               <img
                 src="assets/images/kabelka2.png"
                 class="d-block w-100"
-                alt="Biela kabelka s kvetinami"
+                alt="Vyšívaná kabelka detail 2"
               />
-              <div
-                class="carousel-caption d-none d-md-block bg-dark bg-opacity-50 rounded p-3"
-              >
-                <h5>🌸 Biela s kvetinami</h5>
-                <p>Mini kabelka s ručne vyšívanými detailmi.</p>
-              </div>
             </div>
 
             <div class="carousel-item">
               <img
-                src="assets/images/kabelka1.png"
+                src="assets/images/kabelka3.png"
                 class="d-block w-100"
-                alt="Hnedá crossbody kabelka"
+                alt="Vyšívaná kabelka detail 3"
               />
-              <div
-                class="carousel-caption d-none d-md-block bg-dark bg-opacity-50 rounded p-3"
-              >
-                <h5>🤎 Hnedá crossbody</h5>
-                <p>Geometrický vzor, moderný a praktický štýl.</p>
-              </div>
-            </div>
-
-            <div class="carousel-item">
-              <img
-                src="assets/images/Kabelka4.png"
-                class="d-block w-100"
-                alt="Srdcová kabelka"
-              />
-              <div
-                class="carousel-caption d-none d-md-block bg-dark bg-opacity-50 rounded p--3"
-              >
-                <h5>🕊️ Srdcová kabelka</h5>
-                <p>Vyšívané srdcia — Valentínska edícia.</p>
-              </div>
-            </div>
-
-            <div class="carousel-item">
-              <img
-                src="assets/images/Kabelka5.png"
-                class="d-block w-100"
-                alt="Mašľová taška"
-              />
-              <div
-                class="carousel-caption d-none d-md-block bg-dark bg-opacity-50 rounded p-3"
-              >
-                <h5>🌾 Mašľová taška </h5>
-                <p>Jedinečný kúsok, ideálny na leto.</p>
-              </div>
             </div>
 
             <div class="carousel-item">
               <img
                 src="assets/images/Kabelka6.png"
                 class="d-block w-100"
-                alt="Kabelka na mieru"
+                alt="Vyšívaná kabelka detail 4"
               />
-              <div
-                class="carousel-caption d-none d-md-block bg-dark bg-opacity-50 rounded p-3"
-              >
-                <h5>✦ Kabelka na mieru</h5>
-                <p>Navrhni si vlastný dizajn podľa svojej predstavy.</p>
-              </div>
             </div>
           </div>
 
-          <!-- Ovládanie -->
           <button
             class="carousel-control-prev"
             type="button"
-            data-bs-target="#kabelkyCarousel"
+            data-bs-target="#galeriaCarousel"
             data-bs-slide="prev"
           >
             <span class="carousel-control-prev-icon"></span>
@@ -301,382 +282,303 @@
           <button
             class="carousel-control-next"
             type="button"
-            data-bs-target="#kabelkyCarousel"
+            data-bs-target="#galeriaCarousel"
             data-bs-slide="next"
           >
             <span class="carousel-control-next-icon"></span>
             <span class="visually-hidden">Ďalšie</span>
           </button>
         </div>
-
-        <!-- Tabuľka porovnania typov -->
-        <h3 class="mt-5 mb-3">Typy kabeliek — prehľad</h3>
-        <div class="table-responsive">
-          <table class="table table-striped table-hover kolekcia-table">
-            <thead>
-              <tr>
-                <th>Typ</th>
-                <th>Materiál</th>
-                <th>Vhodné pre</th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr>
-                <td class="td-highlight">Crossbody</td>
-                <td>macrame + vyšívanie</td>
-                <td>každodenné nosenie</td>
-              </tr>
-              <tr>
-                <td class="td-highlight">Clutch</td>
-                <td>macrame + korálky</td>
-                <td>večerné príležitosti</td>
-              </tr>
-              <tr>
-                <td class="td-highlight">Shopper</td>
-                <td>hrubá macrame priadza</td>
-                <td>nákupy, pláž, piknik</td>
-              </tr>
-            </tbody>
-          </table>
-        </div>
       </section>
 
-      <!-- SEPARATOR -->
       <div class="ornament-separator">✦ ✦ ✦</div>
 
-      <!-- SEKCIA STAROSTLIVOSŤ / TIPY -->
-      <section id="tipy" class="mb-5 section-fade tipy-section">
-        <div class="text-center mb-5">
-          <span class="section-tag">Starostlivosť</span>
-          <h2 class="section-title">
-            Ako sa starať<br /><em>o vašu kabelku</em>
-          </h2>
-        </div>
+      <!-- O NÁS -->
+      <section id="o-nas" class="mb-5 section-fade">
+        <span class="section-tag">O nás</span>
+        <h2 class="section-title">Príbeh<br /><em>VK Studio</em></h2>
 
-        <div class="row g-4">
-          <div class="col-12 col-md-4">
-            <div class="tip-card">
-              <div class="tip-icon">🧼</div>
-              <h4>Čistenie</h4>
-              <ul class="list-group list-group-flush tip-list">
-                <li class="list-group-item">
-                  Jemne vyčistiť vlhkou handričkou
-                </li>
-                <li class="list-group-item">Nepoužívať agresívne čistidlá</li>
-                <li class="list-group-item">Vyhnúť sa praniu v práčke</li>
-                <li class="list-group-item">Sušiť na vzduchu v tieni</li>
-              </ul>
-            </div>
-          </div>
-          <div class="col-12 col-md-4">
-            <div class="tip-card">
-              <div class="tip-icon">📦</div>
-              <h4>Skladovanie</h4>
-              <ol class="list-group list-group-numbered tip-list">
-                <li class="list-group-item">Uložte do látkového vrecka</li>
-                <li class="list-group-item">
-                  Uložte naležato a do vnútra uložte papier
-                </li>
-                <li class="list-group-item">Vyhýbajte sa priamemu slnku</li>
-                <li class="list-group-item">Chráňte pred vlhkosťou</li>
-              </ol>
-            </div>
-          </div>
-          <div class="col-12 col-md-4">
-            <div class="tip-card">
-              <div class="tip-icon">💡</div>
-              <h4>Dlhá životnosť</h4>
-              <ul class="list-group list-group-flush tip-list">
-                <li class="list-group-item">Nepreťažujte kabelku</li>
-                <li class="list-group-item">V daždi používajte kryt</li>
-                <li class="list-group-item">Vyšívanie nedrhnite</li>
-                <li class="list-group-item">
-                  Uvoľnené stehy opravíme bezplatne
-                </li>
-              </ul>
-            </div>
-          </div>
-        </div>
-
-        <p class="mt-4 text-center section-text">
-          Viac inšpirácie o macrame tvorbe nájdeš na portáli
-          <a
-            href="https://www.pinterest.com/search/pins/?q=macrame+bag"
-            target="_blank"
-            class="styled-link"
-            >Pinterest — macrame bags</a
-          >.
+        <p class="section-text">
+          VK Studio vzniklo z vášne pre ručnú tvorbu a z túžby vytvárať doplnky,
+          ktoré nie sú len módnym trendom. Každá kabelka je výsledkom trpezlivosti,
+          skúšania a detailnej práce.
         </p>
+
+        <p class="section-text">
+          Pri výrobe kombinujeme macrame techniky so starostlivou výšivkou. Naše
+          kabelky sú spevnené, držia tvar a sú navrhnuté tak, aby sa dali nosiť
+          každý deň.
+        </p>
+
+        <p class="section-text">
+          Najviac nás teší, keď zákazníčka dostane kabelku, ktorá presne vystihuje
+          jej štýl. Preto vyrábame aj modely na mieru a radi poradíme pri výbere
+          farieb či výšivky.
+        </p>
+
+        <figure class="my-5 text-center">
+          <img
+            src="assets/images/Kabelka5.png"
+            class="img-fluid rounded shadow"
+            alt="Detail ručnej výšivky na kabelke"
+            style="max-width: 650px"
+          />
+          <figcaption class="mt-2 section-text">
+            Detail výšivky – každý steh je robený ručne.
+          </figcaption>
+        </figure>
+
+        <!-- ACCORDION -->
+        <div class="accordion mt-4" id="faqAccordion">
+          <div class="accordion-item">
+            <h2 class="accordion-header">
+              <button
+                class="accordion-button"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#faq1"
+              >
+                Ako dlho trvá výroba kabelky?
+              </button>
+            </h2>
+            <div id="faq1" class="accordion-collapse collapse show">
+              <div class="accordion-body">
+                Výroba trvá 5 až 14 dní podľa náročnosti vzoru a dostupnosti
+                materiálov.
+              </div>
+            </div>
+          </div>
+
+          <div class="accordion-item">
+            <h2 class="accordion-header">
+              <button
+                class="accordion-button collapsed"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#faq2"
+              >
+                Sú kabelky vhodné na bežné nosenie?
+              </button>
+            </h2>
+            <div id="faq2" class="accordion-collapse collapse">
+              <div class="accordion-body">
+                Áno, kabelky sú spevnené a majú pevné dno. Sú navrhnuté na každodenné
+                používanie.
+              </div>
+            </div>
+          </div>
+
+          <div class="accordion-item">
+            <h2 class="accordion-header">
+              <button
+                class="accordion-button collapsed"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#faq3"
+              >
+                Aké materiály používate?
+              </button>
+            </h2>
+            <div id="faq3" class="accordion-collapse collapse">
+              <div class="accordion-body">
+                Používame macrame priadzu, podšívky a kvalitné kovové komponenty.
+                Výšivky sú robené ručne bez strojovej výroby.
+              </div>
+            </div>
+          </div>
+
+          <div class="accordion-item">
+            <h2 class="accordion-header">
+              <button
+                class="accordion-button collapsed"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#faq4"
+              >
+                Dá sa objednať vlastný dizajn?
+              </button>
+            </h2>
+            <div id="faq4" class="accordion-collapse collapse">
+              <div class="accordion-body">
+                Áno, stačí nám napísať predstavu alebo poslať inšpiráciu a kabelku
+                vyrobíme na mieru.
+              </div>
+            </div>
+          </div>
+        </div>
       </section>
 
-      <!-- SEPARATOR -->
       <div class="ornament-separator">✦ ✦ ✦</div>
 
-      <!-- SEKCIA NOVINKY / INŠPIRÁCIE -->
-      <section id="novinky" class="mb-5 section-fade">
-        <div class="text-center mb-5">
-          <span class="section-tag">Inšpirácie</span>
-          <h2 class="section-title">Čo je nové<br /><em>v ateliéri</em></h2>
-        </div>
-        <div class="row g-4">
-          <div class="col-12 col-md-4">
-            <div class="news-card">
-              <div class="news-date">Apríl 2026</div>
-              <h5>Jarná kolekcia je tu!</h5>
-              <p>
-                Nové vzory s botanickými motívmi — ľalie, maky a divé ruže.
-                Ľahké, vzdušné, ideálne na jar.
-              </p>
-            </div>
-          </div>
-          <div class="col-12 col-md-4">
-            <div class="news-card">
-              <div class="news-date">Marec 2026</div>
-              <h5>Workshop vyšívania</h5>
-              <p>
-                Organizujeme malý workshop pre záujemkyne — naučte sa základy
-                vyšívania na macrame podklade.
-              </p>
-            </div>
-          </div>
-          <div class="col-12 col-md-4">
-            <div class="news-card">
-              <div class="news-date">Február 2026</div>
-              <h5>Limitovaná valentínska edícia</h5>
-              <p>
-                Srdcia, ruže a zlaté detaily — výpredaj posledných kusov stále
-                prebieha.
-              </p>
-            </div>
-          </div>
-        </div>
+      <!-- CTA -->
+      <section class="cta-section section-fade text-center mb-5">
+        <h2 class="section-title">Chceš kabelku<br /><em>na mieru?</em></h2>
+        <p class="section-text mx-auto" style="max-width: 650px">
+          Napíš nám svoju predstavu. Spoločne vyberieme farby, veľkosť aj vzor
+          výšivky a vytvoríme kabelku presne podľa tvojho štýlu.
+        </p>
+
+        <a href="#kontakt" class="btn-submit mt-3">Prejsť na kontakt</a>
       </section>
 
-      <!-- SEPARATOR -->
-      <div class="ornament-separator">✦ ✦ ✦</div>
-
-      <!-- SEKCIA KONTAKT -->
-      <section id="kontakt" class="mb-5 section-fade">
-        <div class="text-center mb-4">
-          <span class="section-tag">Spojme sa</span>
-          <h2 class="section-title">Kontakt</h2>
-        </div>
-        <div class="row justify-content-center">
-          <div class="col-12 col-md-6 text-center">
-            <p class="section-text">
-              Máte otázky o konkrétnom kúsku alebo chcete kabelku na mieru?
-              Napíšte nám!
-            </p>
-            <p class="contact-email">
-              <a href="mailto:info@vysivane-kabelky.sk" class="styled-link"
-                >info@vysivane-kabelky.sk</a
-              >
-            </p>
-            <p class="section-text">
-              Sledujte nás na Instagrame:
-              <a href="#" class="styled-link">@vysivane.kabelky</a>
-            </p>
-          </div>
-        </div>
-      </section>
-
-      <!-- SEKCIA OBJEDNÁVKA / FORMULÁR -->
-      <section id="objednavka" class="mb-5 section-fade">
+      <!-- KONTAKT -->
+      <section id="kontakt" class="section-fade mb-5">
         <div class="text-center mb-5">
-          <span class="section-tag">Formulár</span>
-          <h2 class="section-title">Objednávka<br /><em>na mieru</em></h2>
-          <p class="section-text">
-            Vyplňte formulár a spoločne vytvoríme kabelku snov práve pre vás.
-          </p>
+          <span class="section-tag">Kontakt</span>
+          <h2 class="section-title">Napíš nám<br /><em>správu</em></h2>
         </div>
 
-        <form
-          action="#"
-          id="kontaktny-formular"
-          class="formular-wrap p-4 p-md-5 border rounded"
-          novalidate
-        >
-          <!-- Fieldset 1: Osobné údaje -->
-          <fieldset class="mb-4">
-            <legend class="fieldset-legend">Osobné údaje</legend>
-
-            <div class="mb-3">
-              <label for="meno" class="form-label"
-                >Meno <span class="text-danger">*</span></label
-              >
-              <input
-                type="text"
-                id="meno"
-                name="meno"
-                class="form-control custom-input"
-                placeholder="napr. Jana Nováková"
-                required
-                minlength="2"
-              />
-              <span class="invalid-hint">Meno musí mať aspoň 2 znaky.</span>
-            </div>
-
-            <div class="mb-3">
-              <label for="email" class="form-label"
-                >E-mail <span class="text-danger">*</span></label
-              >
-              <input
-                type="email"
-                id="email"
-                name="email"
-                class="form-control custom-input"
-                placeholder="napr. jana@example.com"
-                required
-              />
-              <span class="invalid-hint">Zadajte platný e-mail.</span>
-            </div>
-
-            <div class="mb-3">
-              <label for="telefon" class="form-label">Telefón</label>
-              <input
-                type="tel"
-                id="telefon"
-                name="telefon"
-                class="form-control custom-input"
-                placeholder="napr. 0901234567"
-                pattern="[0-9]{9,10}"
-              />
-              <span class="invalid-hint">Telefón musí mať 9–10 číslic.</span>
-            </div>
-          </fieldset>
-
-          <!-- Fieldset 2: Detail objednávky -->
-          <fieldset class="mb-4">
-            <legend class="fieldset-legend">Detail objednávky</legend>
-
-            <div class="mb-3">
-              <label for="sprava" class="form-label"
-                >Vaša predstava <span class="text-danger">*</span></label
-              >
-              <textarea
-                id="sprava"
-                name="sprava"
-                class="form-control custom-input"
-                rows="4"
-                placeholder="Opíšte farby, vzory, veľkosť, príležitosť…"
-                maxlength="200"
-                required
-                minlength="10"
-              ></textarea>
-              <div class="form-text">
-                Zostávajúce znaky: <span id="pocitadlo-znakov">200</span>
-              </div>
-              <span class="invalid-hint"
-                >Popis musí mať aspoň 10 znakov (max 200).</span
-              >
-            </div>
-
-            <!-- Radio: typ kabelky -->
-            <div class="mb-3">
-              <p class="form-label fw-semibold mb-2">
-                Preferovaný typ kabelky:
-              </p>
-              <div class="form-check">
-                <input
-                  class="form-check-input"
-                  type="radio"
-                  name="typ-kabelky"
-                  id="typ-crossbody"
-                  value="crossbody"
-                />
-                <label class="form-check-label" for="typ-crossbody"
-                  >Crossbody</label
-                >
-              </div>
-              <div class="form-check">
-                <input
-                  class="form-check-input"
-                  type="radio"
-                  name="typ-kabelky"
-                  id="typ-clutch"
-                  value="clutch"
-                />
-                <label class="form-check-label" for="typ-clutch"
-                  >Clutch / spoločenská</label
-                >
-              </div>
-              <div class="form-check">
-                <input
-                  class="form-check-input"
-                  type="radio"
-                  name="typ-kabelky"
-                  id="typ-shopper"
-                  value="shopper"
-                />
-                <label class="form-check-label" for="typ-shopper"
-                  >Shopper / taška</label
-                >
-              </div>
-            </div>
-
-            <!-- Podmienená sekcia: detaily objednávky na mieru -->
-            <div
-              id="sekcia-rezervacie"
-              class="mb-3 p-3 border rounded detaily-mieru"
+        <div class="row g-5">
+          <!-- FORM -->
+          <div class="col-12 col-lg-7">
+            <form
+              id="kontakt-formular"
+              class="formular-wrap p-4 p-md-5 border rounded"
+              novalidate
             >
-              <h5 class="mb-3">Detaily objednávky na mieru</h5>
-              <div class="mb-3">
-                <label for="datum-rezervacie" class="form-label"
-                  >Potrebujete do dátumu (napr. darček)</label
+              <fieldset class="mb-4">
+                <legend class="fieldset-legend">Osobné údaje</legend>
+
+                <div class="mb-3">
+                  <label for="meno" class="form-label"
+                    >Meno <span class="text-danger">*</span></label
+                  >
+                  <input
+                    type="text"
+                    id="meno"
+                    class="form-control custom-input"
+                    required
+                    minlength="2"
+                  />
+                  <span class="invalid-hint">Meno musí mať aspoň 2 znaky.</span>
+                </div>
+
+                <div class="mb-3">
+                  <label for="email" class="form-label"
+                    >E-mail <span class="text-danger">*</span></label
+                  >
+                  <input
+                    type="email"
+                    id="email"
+                    class="form-control custom-input"
+                    required
+                  />
+                  <span class="invalid-hint">Zadaj platný e-mail.</span>
+                </div>
+
+                <div class="mb-3">
+                  <label for="telefon" class="form-label">Telefón</label>
+                  <input
+                    type="tel"
+                    id="telefon"
+                    class="form-control custom-input"
+                    pattern="[0-9]{9,10}"
+                    placeholder="0901234567"
+                  />
+                  <span class="invalid-hint"
+                    >Telefón musí mať 9–10 číslic.</span
+                  >
+                </div>
+              </fieldset>
+
+              <fieldset class="mb-4">
+                <legend class="fieldset-legend">Objednávka</legend>
+
+                <div class="mb-3">
+                  <label for="typ" class="form-label"
+                    >Typ kabelky <span class="text-danger">*</span></label
+                  >
+                  <select id="typ" class="form-select custom-input" required>
+                    <option value="">Vyber možnosť</option>
+                    <option value="crossbody">Crossbody</option>
+                    <option value="mini">Mini kabelka</option>
+                    <option value="shopper">Shopper</option>
+                  </select>
+                  <span class="invalid-hint">Vyber typ kabelky.</span>
+                </div>
+
+                <div class="mb-3">
+                  <label for="sprava" class="form-label"
+                    >Správa <span class="text-danger">*</span></label
+                  >
+                  <textarea
+                    id="sprava"
+                    class="form-control custom-input"
+                    rows="4"
+                    maxlength="200"
+                    minlength="10"
+                    required
+                  ></textarea>
+
+                  <div class="form-text">
+                    Zostávajúce znaky: <span id="pocitadlo-znakov">200</span>
+                  </div>
+
+                  <span class="invalid-hint"
+                    >Správa musí mať aspoň 10 znakov.</span
+                  >
+                </div>
+
+                <div class="mb-3 form-check">
+                  <input
+                    type="checkbox"
+                    id="suhlas"
+                    class="form-check-input"
+                    required
+                  />
+                  <label class="form-check-label" for="suhlas">
+                    Súhlasím so spracovaním údajov.
+                    <span class="text-danger">*</span>
+                  </label>
+                  <span class="invalid-hint d-block">Súhlas je povinný.</span>
+                </div>
+              </fieldset>
+
+              <button type="submit" class="btn-submit w-100">
+                Odoslať správu
+              </button>
+            </form>
+          </div>
+
+          <!-- CONTACT INFO -->
+          <div class="col-12 col-lg-5">
+            <div class="contact-box shadow p-4 rounded">
+              <h3 class="mb-3">Kontaktné údaje</h3>
+              <p><strong>Adresa:</strong> VK Studio, Bratislava</p>
+              <p>
+                <strong>E-mail:</strong>
+                <a href="mailto:info@vysivane-kabelky.sk"
+                  >info@vysivane-kabelky.sk</a
                 >
-                <input
-                  type="date"
-                  id="datum-rezervacie"
-                  name="datum"
-                  class="form-control custom-input"
-                />
-              </div>
-              <div class="mb-3">
-                <label for="pocet-osob" class="form-label">Počet kusov</label>
-                <input
-                  type="number"
-                  id="pocet-osob"
-                  name="pocet-kusov"
-                  class="form-control custom-input"
-                  min="1"
-                  max="20"
-                  placeholder="napr. 1"
-                />
-              </div>
+              </p>
+              <p><strong>Telefón:</strong> +421 900 123 456</p>
+              <p class="section-text">
+                Odpovedáme do 48 hodín. Pri urgentnej objednávke napíš do správy
+                požadovaný termín.
+              </p>
             </div>
-
-            <!-- Súhlas -->
-            <div class="mb-3 form-check">
-              <input
-                type="checkbox"
-                id="suhlas"
-                name="suhlas"
-                class="form-check-input"
-                required
-              />
-              <label for="suhlas" class="form-check-label">
-                Súhlasím so spracovaním osobných údajov.
-                <span class="text-danger">*</span>
-              </label>
-              <span class="invalid-hint d-block">Súhlas je povinný.</span>
-            </div>
-          </fieldset>
-
-          <div class="text-center">
-            <button type="submit" class="btn-submit">Odoslať objednávku</button>
           </div>
-
-          <!-- Správa po odoslaní -->
-          <div
-            id="sprava-odoslana"
-            class="alert-success-custom mt-4"
-            style="display: none"
-          >
-            ✦ Ďakujeme! Vaša objednávka bola prijatá. Ozveme sa do 48 hodín.
-          </div>
-        </form>
+        </div>
       </section>
     </main>
+
+    <!-- TOAST -->
+    <div class="toast-container position-fixed bottom-0 end-0 p-3">
+      <div
+        id="kontaktToast"
+        class="toast align-items-center text-bg-dark border-0"
+        role="alert"
+      >
+        <div class="d-flex">
+          <div class="toast-body">✦ Správa bola úspešne odoslaná. Ďakujeme!</div>
+          <button
+            type="button"
+            class="btn-close btn-close-white me-2 m-auto"
+            data-bs-dismiss="toast"
+          ></button>
+        </div>
+      </div>
+    </div>
 
     <!-- FOOTER -->
     <footer class="site-footer py-5">
@@ -685,12 +587,14 @@
         <p class="footer-tagline">
           Vyšívané kabelky z macrame priadze — s láskou a precíznosťou.
         </p>
+
         <div class="footer-links">
-          <a href="#o-nas">O nás</a>
+          <a href="#o-teme">O téme</a>
           <a href="#kolekcia">Kolekcia</a>
-          <a href="#tipy">Starostlivosť</a>
+          <a href="#galeria">Galéria</a>
           <a href="#kontakt">Kontakt</a>
         </div>
+
         <p class="footer-copy">
           &copy; 2026 VK Studio. Všetky práva vyhradené.
         </p>
@@ -698,7 +602,6 @@
     </footer>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
-    <!-- Externý JS súbor — pridaný tesne pred </body> -->
-    <script src="assets/js/script.js"></script>
+    <script src="script.js"></script>
   </body>
 </html>
