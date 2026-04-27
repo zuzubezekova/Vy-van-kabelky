@@ -38,6 +38,10 @@
   --radius: 12px;
   --shadow: 0 4px 24px var(--color-shadow);
   --shadow-lg: 0 8px 40px var(--color-shadow-hover);
+   /* ===== GRADIENT LIGHT ===== */
+   --grad-0: rgba(83, 61, 52, 0.55);
+  --grad-40: rgba(101, 78, 62, 0.45);
+  --grad-100: rgba(43, 31, 26, 0.75);
 }
 
 /* Dark mode */
@@ -55,6 +59,11 @@ body.dark-mode {
 
   --color-ink: #f0e4d0;
   --color-mud: #b0906a;
+  /* ===== GRADIENT DARK ===== */
+   --grad-0: rgba(197, 143, 120, 0.75);  /* espresso */
+  --grad-40: rgba(203, 153, 119, 0.65); /* bark */
+  --grad-100: rgba(245, 235, 220, 0.55); /* latte */
+
 }
 
 /* BASE */
@@ -147,12 +156,21 @@ option {
   display: flex;
   align-items: center;
   justify-content: center;
-  background: linear-gradient(
-    135deg,
-    var(--color-espresso) 0%,
-    var(--color-bark) 40%,
-    var(--color-latte) 100%
-  );
+
+  /* POZADIE FOTKA + GRADIENT OVERLAY */
+  background:
+    linear-gradient(
+      135deg,
+      var(--grad-0) 0%,   /* espresso overlay */
+      var(--grad-40) 40%,  /* bark overlay */
+      var(--grad-100) 100% /* latte overlay */
+    ),
+    url("../images/Kabelka8.png");
+
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+
   overflow: hidden;
 }
 
