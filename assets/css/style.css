@@ -1,80 +1,72 @@
 /* =============================================
    VK Studio — Vyšívané kabelky
-   Kremovo-hnedá, elegantná paleta
+   Kompletný CSS
    ============================================= */
 
+/* Bootstrap premenné farebnej schémy */
 :root {
-  /* — Pozadie — */
-  --color-cream:           #f5efe6;   /* hlavné pozadie stránky */
-  --color-cream-dark:      #ede3d4;   /* tmavšie pozadie, striedavé sekcie */
-  --color-white-warm:      #fdfaf6;   /* pozadie kariet, formulárov */
+  --bs-primary: #5c3d2e;
+  --bs-secondary: #c8a97e;
+  --bs-body-bg: #f5efe6;
+  --bs-body-color: #211e3a;
 
-  /* — Akcenty — */
-  --color-latte:           #c8a97e;   /* hlavný akcentový odtieň */
-  --color-latte-dark:      #a07850;   /* hover akcenty, zvýraznenia */
-  --color-sand:            #d4bfa0;   /* jemný odtieň, ornamenty, okraje */
+  --color-cream: #f5efe6;
+  --color-cream-dark: #ede3d4;
+  --color-white-warm: #fdfaf6;
 
-  /* — Espresso / primárna — */
-  --color-espresso:        #5c3d2e;   /* hlavičky, navbar, CTA, footer */
-  --color-bark:            #8b6550;   /* hover na espresso prvkoch */
+  --color-latte: #c8a97e;
+  --color-latte-dark: #a07850;
+  --color-sand: #d4bfa0;
 
-  /* — Text — */
-  --color-ink:             #211e3a;   /* hlavný text obsahu */
-  --color-mud:             #7a6355;   /* sekundárny / popisný text */
+  --color-espresso: #5c3d2e;
+  --color-bark: #8b6550;
 
-  /* — Špeciálne — */
-  --color-error:           #a0522d;   /* chybový text */
-  --color-alert-bg:        #f0e8d8;   /* pozadie úspešného alertu */
-  --color-nav-dark:        #110a06;   /* navbar v dark mode */
-  --color-nav:             #d4bfa0;   /* navbar text*/
+  --color-ink: #211e3a;
+  --color-mud: #7a6355;
 
-  /* — Tiene — */
-  --color-shadow:          rgba(92,61,46,0.10);
-  --color-shadow-hover:    rgba(92,61,46,0.16);
-  --color-shadow-btn:      rgba(92,61,46,0.25);
-  --color-latte-glow:      rgba(200,169,126,0.2);
+  --color-error: #a0522d;
+  --color-alert-bg: #f0e8d8;
 
-  /* — Písmo — */
-  --font-display: 'Cormorant Garamond', serif;
-  --font-body:    'Jost', sans-serif;
+  --color-shadow: rgba(92, 61, 46, 0.1);
+  --color-shadow-hover: rgba(92, 61, 46, 0.16);
+  --color-shadow-btn: rgba(92, 61, 46, 0.25);
+  --color-latte-glow: rgba(200, 169, 126, 0.2);
 
-  /* — Rozloženie — */
-  --radius:    12px;
-  --shadow:    0 4px 24px var(--color-shadow);
+  --font-display: "Cormorant Garamond", serif;
+  --font-body: "Jost", sans-serif;
+
+  --radius: 12px;
+  --shadow: 0 4px 24px var(--color-shadow);
   --shadow-lg: 0 8px 40px var(--color-shadow-hover);
 }
 
-/* Dark mode overrides */
+/* Dark mode */
 body.dark-mode {
-  --color-cream:           #1e160f;
-  --color-cream-dark:      #2a1e14;
-  --color-white-warm:      #251810;
+  --color-cream: #1e160f;
+  --color-cream-dark: #2a1e14;
+  --color-white-warm: #251810;
 
-  --color-latte:           #a07850;
-  --color-latte-dark:      #c8a97e;
-  --color-sand:            #4a3020;
+  --color-latte: #a07850;
+  --color-latte-dark: #c8a97e;
+  --color-sand: #4a3020;
 
-  --color-espresso:        #e8d5bc;
-  --color-bark:            #e8d5bc;
+  --color-espresso: #e8d5bc;
+  --color-bark: #e8d5bc;
 
-  --color-ink:             #f0e4d0;
-  --color-mud:             #b0906a;
-
-  --color-nav-dark:        #110a06;
-  --color-nav:             #a07850;
+  --color-ink: #f0e4d0;
+  --color-mud: #b0906a;
 }
 
-/* =============================================
-   BASE
-   ============================================= */
-*, *::before, *::after { box-sizing: border-box; }
-
-::placeholder {
-  color: var(--color-mud) !important;
-  opacity: 1 !important;
+/* BASE */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
 }
 
-html { scroll-behavior: smooth; }
+html {
+  scroll-behavior: smooth;
+}
 
 body {
   background-color: var(--color-cream);
@@ -86,17 +78,20 @@ body {
   transition: background-color 0.4s, color 0.4s;
 }
 
-img { max-width: 100%; }
+img {
+  max-width: 100%;
+}
 
-a { color: var(--color-latte-dark); }
-a:hover { color: var(--color-espresso); }
+a {
+  color: var(--color-latte-dark);
+}
+a:hover {
+  color: var(--color-espresso);
+}
 
-/* =============================================
-   TYPOGRAPHY HELPERS
-   ============================================= */
+/* TYPO */
 .section-tag {
   display: inline-block;
-  font-family: var(--font-body);
   font-size: 0.72rem;
   font-weight: 500;
   letter-spacing: 0.18em;
@@ -134,42 +129,20 @@ a:hover { color: var(--color-espresso); }
   opacity: 0.7;
 }
 
-.styled-link {
-  color: var(--color-latte-dark);
-  text-decoration: underline;
-  text-underline-offset: 4px;
-  transition: color 0.2s;
-}
-.styled-link:hover { color: var(--color-espresso); }
-
-/* =============================================
-   HERO
-   ============================================= */
+/* HERO */
 #hero {
   position: relative;
   min-height: 100vh;
   display: flex;
   align-items: center;
   justify-content: center;
-  background: linear-gradient(135deg, var(--color-espresso) 0%, var(--color-bark) 40%, var(--color-latte) 100%);
+  background: linear-gradient(
+    135deg,
+    var(--color-espresso) 0%,
+    var(--color-bark) 40%,
+    var(--color-latte) 100%
+  );
   overflow: hidden;
-}
-
-#hero::before {
-  content: '';
-  position: absolute;
-  inset: 0;
-  background-image:
-    radial-gradient(circle at 20% 50%, rgba(245,239,230,0.08) 0%, transparent 60%),
-    radial-gradient(circle at 80% 20%, rgba(245,239,230,0.06) 0%, transparent 50%);
-}
-
-#hero::after {
-  content: '';
-  position: absolute;
-  inset: 0;
-  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='60' height='60'%3E%3Ccircle cx='30' cy='30' r='1.5' fill='rgba(245,239,230,0.07)'/%3E%3Ccircle cx='0' cy='0' r='1' fill='rgba(245,239,230,0.05)'/%3E%3Ccircle cx='60' cy='60' r='1' fill='rgba(245,239,230,0.05)'/%3E%3C/svg%3E");
-  background-repeat: repeat;
 }
 
 .hero-overlay {
@@ -181,12 +154,17 @@ a:hover { color: var(--color-espresso); }
 }
 
 @keyframes heroFadeIn {
-  from { opacity: 0; transform: translateY(30px); }
-  to   { opacity: 1; transform: translateY(0); }
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
 
 .hero-eyebrow {
-  font-family: var(--font-body);
   font-size: 0.78rem;
   font-weight: 500;
   letter-spacing: 0.22em;
@@ -221,7 +199,6 @@ a:hover { color: var(--color-espresso); }
   padding: 0.85rem 2.4rem;
   border: 1.5px solid var(--color-sand);
   color: var(--color-white-warm);
-  font-family: var(--font-body);
   font-size: 0.85rem;
   font-weight: 500;
   letter-spacing: 0.12em;
@@ -230,6 +207,7 @@ a:hover { color: var(--color-espresso); }
   border-radius: 100px;
   transition: background 0.3s, color 0.3s;
 }
+
 .btn-hero:hover {
   background: var(--color-sand);
   color: var(--color-espresso);
@@ -247,16 +225,18 @@ a:hover { color: var(--color-espresso); }
 }
 
 @keyframes bounce {
-  0%, 100% { transform: translateX(-50%) translateY(0); }
-  50%       { transform: translateX(-50%) translateY(8px); }
+  0%,
+  100% {
+    transform: translateX(-50%) translateY(0);
+  }
+  50% {
+    transform: translateX(-50%) translateY(8px);
+  }
 }
 
-/* =============================================
-   NAVBAR
-   ============================================= */
+/* NAVBAR */
 #hlavna-nav {
   background-color: var(--color-espresso) !important;
-  border-bottom: 1px solid var(--color-ink);
   transition: background-color 0.4s;
 }
 
@@ -269,15 +249,10 @@ a:hover { color: var(--color-espresso); }
 }
 
 #hlavna-nav .nav-link {
-  color: var(--color-nav) !important;
+  color: var(--color-sand) !important;
   font-size: 0.85rem;
   font-weight: 400;
   letter-spacing: 0.06em;
-  transition: color 0.2s;
-}
-#hlavna-nav .nav-link:hover,
-#hlavna-nav .nav-link.active {
-  color: var(--color-sand) !important;
 }
 
 #dark-mode-btn {
@@ -285,231 +260,74 @@ a:hover { color: var(--color-espresso); }
   color: var(--color-sand);
   font-size: 0.78rem;
 }
+
 #dark-mode-btn:hover {
   background: var(--color-sand);
   color: var(--color-espresso);
 }
 
-/* =============================================
-   SECTION FADE IN
-   ============================================= */
+/* FADE */
 .section-fade {
   opacity: 0;
   transform: translateY(28px);
   transition: opacity 0.7s ease, transform 0.7s ease;
 }
+
 .section-fade.visible {
   opacity: 1;
   transform: none;
 }
 
-/* =============================================
-   O NÁS
-   ============================================= */
+/* IMAGE FRAME */
 .img-frame {
   position: relative;
   display: inline-block;
 }
+
 .img-frame::before {
-  content: '';
+  content: "";
   position: absolute;
-  top: -12px; left: -12px;
-  right: -12px; bottom: -12px;
+  top: -12px;
+  left: -12px;
+  right: -12px;
+  bottom: -12px;
   border: 1.5px solid var(--color-sand);
   border-radius: var(--radius);
-  z-index: 0;
-}
-.img-frame img {
-  position: relative;
-  z-index: 1;
 }
 
-.stats-row {
-  display: flex;
-  gap: 2rem;
-  margin-top: 2rem;
-  flex-wrap: wrap;
-}
-.stat-item {
-  display: flex;
-  flex-direction: column;
-}
-.stat-num {
-  font-family: var(--font-display);
-  font-size: 2.2rem;
-  font-weight: 300;
-  color: var(--color-latte-dark);
-  line-height: 1;
-}
-.stat-label {
-  font-size: 0.78rem;
-  font-weight: 400;
-  letter-spacing: 0.08em;
-  color: var(--color-mud);
-  text-transform: uppercase;
-  margin-top: 0.2rem;
-}
-
-/* =============================================
-   KOLEKCIA
-   ============================================= */
-.search-wrap .search-input {
-  background: var(--color-white-warm);
-  border-color: var(--color-sand);
-  color: var(--color-ink);
-  border-radius: var(--radius);
-}
-.search-wrap .search-input:focus {
-  border-color: var(--color-latte);
-  box-shadow: 0 0 0 3px rgba(200,169,126,0.18);
-  background: var(--color-white-warm);
-}
-
-.kolekcia-list .list-group-item {
-  background: var(--color-white-warm);
-  border-color: var(--color-cream-dark);
-  color: var(--color-ink);
-  font-size: 0.96rem;
-  padding: 0.85rem 1.2rem;
-  transition: background 0.2s, padding-left 0.2s;
-}
-.kolekcia-list .list-group-item:hover {
-  background: var(--color-cream-dark);
-  padding-left: 1.6rem;
-}
-
-.kolekcia-table thead {
-  background-color: var(--color-espresso) !important;
-  color: var(--color-sand);
-}
-.kolekcia-table thead th {
-  font-family: var(--font-body);
-  font-weight: 500;
-  letter-spacing: 0.06em;
-  font-size: 0.85rem;
-  text-transform: uppercase;
+/* CARDS */
+.custom-card {
   border: none;
-  padding: 0.9rem 1rem;
-  background-color: var(--color-espresso);
-}
-.kolekcia-table tbody tr {
-  background: var(--color-white-warm);
-}
-.kolekcia-table tbody tr:nth-child(even) {
-  background: var(--color-cream-dark);
-}
-.kolekcia-table tbody td {
-  background-color: var(--color-cream-dark);
-  border-color: var(--color-cream-dark);
-  color: var(--color-ink);
-  vertical-align: middle;
-}
-.td-highlight {
-  font-family: var(--font-display);
-  font-size: 1.05rem;
-  color: var(--color-latte-dark) !important;
-  font-style: italic;
-}
-.table>:not(caption)>*>* {
-  color: var(--bs-table-color-state, var(--bs-table-color-type, var(--bs-table-color)));
-  background-color: var(--bs-table-bg);
-  border-bottom-width: var(--bs-border-width);
-  box-shadow: inset 0 0 0 9999px var(--bs-table-bg-state, var(--bs-table-bg-type, var(--bs-table-accent-bg)));
+  border-radius: var(--radius);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
-/* =============================================
-   TIPY / STAROSTLIVOSŤ
-   ============================================= */
-.tipy-section {
-  background: linear-gradient(135deg, var(--color-cream-dark) 0%, var(--color-cream) 100%);
+.custom-card:hover {
+  transform: translateY(-6px);
+  box-shadow: var(--shadow-lg);
+}
+
+/* CAROUSEL */
+.carousel img {
+  height: 420px;
+  object-fit: cover;
+  border-radius: 12px;
+}
+
+/* CTA */
+.cta-section {
+  background: linear-gradient(135deg, var(--color-cream-dark), var(--color-cream));
   border-radius: var(--radius);
   padding: 3rem 2rem;
-}
-
-.tip-card {
-  background: var(--color-white-warm);
-  border-radius: var(--radius);
-  padding: 1.8rem 1.4rem;
   box-shadow: var(--shadow);
-  height: 100%;
-  transition: box-shadow 0.3s, transform 0.3s;
-}
-.tip-card:hover {
-  box-shadow: var(--shadow-lg);
-  transform: translateY(-4px);
-}
-.tip-icon {
-  font-size: 2rem;
-  margin-bottom: 0.6rem;
-}
-.tip-card h4 {
-  font-family: var(--font-display);
-  font-size: 1.3rem;
-  font-weight: 400;
-  color: var(--color-espresso);
-  margin-bottom: 0.8rem;
-}
-.tip-list .list-group-item {
-  background: transparent;
-  border-color: var(--color-cream-dark);
-  color: var(--color-mud);
-  font-size: 0.9rem;
-  padding: 0.5rem 0;
 }
 
-/* =============================================
-   NOVINKY
-   ============================================= */
-.news-card {
-  background: var(--color-white-warm);
-  border-radius: var(--radius);
-  padding: 1.8rem;
-  box-shadow: var(--shadow);
-  border-left: 3px solid var(--color-latte);
-  height: 100%;
-  transition: box-shadow 0.3s;
-}
-.news-card:hover { box-shadow: var(--shadow-lg); }
-.news-date {
-  font-size: 0.75rem;
-  font-weight: 500;
-  letter-spacing: 0.12em;
-  text-transform: uppercase;
-  color: var(--color-latte-dark);
-  margin-bottom: 0.5rem;
-}
-.news-card h5 {
-  font-family: var(--font-display);
-  font-size: 1.25rem;
-  font-weight: 400;
-  color: var(--color-espresso);
-  margin-bottom: 0.5rem;
-}
-.news-card p {
-  color: var(--color-mud);
-  font-size: 0.92rem;
-  margin: 0;
-}
-
-/* =============================================
-   KONTAKT
-   ============================================= */
-.contact-email {
-  font-family: var(--font-display);
-  font-size: 1.3rem;
-  margin: 1rem 0;
-}
-
-/* =============================================
-   FORMULÁR
-   ============================================= */
+/* FORM */
 .formular-wrap {
   background: var(--color-white-warm);
   border-color: var(--color-sand) !important;
   border-radius: var(--radius) !important;
   box-shadow: var(--shadow);
-  max-width: 780px;
-  margin: 0 auto;
 }
 
 .fieldset-legend {
@@ -524,24 +342,25 @@ a:hover { color: var(--color-espresso); }
   width: 100%;
 }
 
-.form-label {
-  color: var(--color-ink);
-  font-size: 0.9rem;
-  font-weight: 400;
-}
-
 .custom-input {
   background: var(--color-cream);
   border-color: var(--color-sand);
-  color: var(--color-ink);
   border-radius: 8px;
-  font-family: var(--font-body);
 }
+
 .custom-input:focus {
   background: var(--color-white-warm);
   border-color: var(--color-latte);
   box-shadow: 0 0 0 3px var(--color-latte-glow);
-  color: var(--color-ink);
+}
+
+/* CSS VALIDATION */
+.custom-input:invalid:focus {
+  border-color: var(--color-error);
+}
+
+.custom-input:valid:focus {
+  border-color: #3a7a3a;
 }
 
 .invalid-hint {
@@ -550,22 +369,13 @@ a:hover { color: var(--color-espresso); }
   font-size: 0.82rem;
   margin-top: 0.25rem;
 }
+
 .custom-input.is-invalid + .invalid-hint,
 .form-check-input.is-invalid ~ .invalid-hint {
   display: block;
 }
 
-.detaily-mieru {
-  background: var(--color-cream);
-  border-color: var(--color-sand) !important;
-  border-radius: 8px;
-}
-
-.form-check-input:checked {
-  background-color: var(--color-latte-dark);
-  border-color: var(--color-latte-dark);
-}
-
+/* BUTTON */
 .btn-submit {
   display: inline-block;
   padding: 0.9rem 3rem;
@@ -573,7 +383,6 @@ a:hover { color: var(--color-espresso); }
   color: var(--color-sand);
   border: none;
   border-radius: 100px;
-  font-family: var(--font-body);
   font-size: 0.9rem;
   font-weight: 500;
   letter-spacing: 0.1em;
@@ -581,26 +390,19 @@ a:hover { color: var(--color-espresso); }
   cursor: pointer;
   transition: background 0.3s, transform 0.2s, box-shadow 0.2s;
 }
+
 .btn-submit:hover {
   background: var(--color-bark);
   transform: translateY(-2px);
   box-shadow: 0 6px 20px var(--color-shadow-btn);
 }
 
-.alert-success-custom {
-  background: var(--color-alert-bg);
-  border: 1px solid var(--color-sand);
-  border-radius: 8px;
-  padding: 1.2rem 1.5rem;
-  color: var(--color-espresso);
-  text-align: center;
-  font-family: var(--font-display);
-  font-size: 1.1rem;
+/* CONTACT BOX */
+.contact-box {
+  background: var(--color-white-warm);
 }
 
-/* =============================================
-   FOOTER
-   ============================================= */
+/* FOOTER */
 .site-footer {
   background: var(--color-espresso);
   color: var(--color-sand);
@@ -616,7 +418,7 @@ a:hover { color: var(--color-espresso); }
 
 .footer-tagline {
   font-size: 0.88rem;
-  color: rgba(212,191,160,0.7);
+  color: rgba(212, 191, 160, 0.7);
   margin-bottom: 1.2rem;
 }
 
@@ -627,67 +429,32 @@ a:hover { color: var(--color-espresso); }
   flex-wrap: wrap;
   margin-bottom: 1.5rem;
 }
+
 .footer-links a {
-  color: rgba(212,191,160,0.7);
+  color: rgba(212, 191, 160, 0.7);
   text-decoration: none;
   font-size: 0.82rem;
   letter-spacing: 0.08em;
   text-transform: uppercase;
   transition: color 0.2s;
 }
-.footer-links a:hover { color: var(--color-sand); }
+
+.footer-links a:hover {
+  color: var(--color-sand);
+}
 
 .footer-copy {
   font-size: 0.78rem;
-  color: rgba(212,191,160,0.7);
-  margin: 0;
+  color: rgba(212, 191, 160, 0.7);
 }
 
-/* =============================================
-   DARK MODE ADJUSTMENTS
-   ============================================= */
-body.dark-mode #hlavna-nav {
-  background-color: var(--color-nav-dark) !important;
-}
-body.dark-mode .formular-wrap {
-  background: var(--color-white-warm);
-}
-body.dark-mode .kolekcia-list .list-group-item {
-  background: var(--color-white-warm);
-  border-color: #3a2a1e;
-  color: var(--color-ink);
-}
-body.dark-mode .tip-card,
-body.dark-mode .news-card {
-  background: var(--color-white-warm);
-}
-body.dark-mode .custom-input {
-  background: var(--color-cream-dark);
-  color: var(--color-ink);
-}
-body.dark-mode .tipy-section {
-  background: linear-gradient(135deg, var(--color-cream-dark) 0%, var(--color-cream) 100%);
-}
-
-/* =============================================
-   CAROUSEL
-   ============================================= */
-.carousel img {
-  height: 420px;
-  object-fit: cover;
-  border-radius: 12px;
-}
-
-.carousel-caption {
-  bottom: 15px;
-}
-
-/* =============================================
-   RESPONSIVE
-   ============================================= */
+/* RESPONSIVE */
 @media (max-width: 768px) {
-  .stats-row { gap: 1.2rem; }
-  .tipy-section { padding: 2rem 1rem; }
-  .img-frame::before { display: none; }
-  .hero-title { font-size: clamp(2.8rem, 12vw, 4rem); }
+  .carousel img {
+    height: 280px;
+  }
+
+  .img-frame::before {
+    display: none;
+  }
 }
