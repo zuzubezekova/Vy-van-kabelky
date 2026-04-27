@@ -1,0 +1,282 @@
+<!doctype html>
+<html lang="sk">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description"
+        content="Kontakt — VK Studio. Napíšte nám správu, objednajte si kabelku na mieru alebo sa opýtajte na čokoľvek." />
+    <title>Kontakt | VK Studio</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;600&family=Jost:wght@300;400;500&display=swap"
+        rel="stylesheet" />
+    <link rel="stylesheet" href="../assets/css/style.css" />
+</head>
+
+<body>
+    <!-- NAVBAR -->
+    <nav class="navbar navbar-expand-lg sticky-top" id="hlavna-nav">
+        <div class="container">
+            <a class="navbar-brand" href="../index.html">✦ VK Studio</a>
+
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="mainNav">
+                <ul class="navbar-nav gap-2 me-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="../index.html#o-teme">O téme</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="../index.html#kolekcia">Kolekcia</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="../index.html#galeria">Galéria</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="o-nas.html">O nás</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="kontakt.html">Kontakt</a>
+                    </li>
+                </ul>
+
+                <button id="dark-mode-btn" class="btn btn-outline-secondary btn-sm ms-3">
+                    🌙 Tmavý režim
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- PAGE HERO -->
+    <div class="page-hero">
+        <div class="container text-center py-5">
+            <span class="section-tag">Napíšte nám</span>
+            <h1 class="section-title mt-2">Kontakt</h1>
+            <p class="section-text mx-auto" style="max-width: 580px">
+                Máte otázku, chcete objednať kabelku na mieru alebo len chcete
+                vedieť viac? Vyplňte formulár a ozveme sa vám do 48 hodín.
+            </p>
+        </div>
+    </div>
+
+    <main class="container my-5">
+        <section class="section-fade mb-5">
+            <div class="row g-5">
+
+                <!-- FORMULÁR -->
+                <div class="col-12 col-lg-7">
+                    <form id="kontakt-formular" class="formular-wrap p-4 p-md-5 border rounded" novalidate>
+                        <!-- FIELDSET 1: Osobné údaje -->
+                        <fieldset class="mb-4">
+                            <legend class="fieldset-legend">Osobné údaje</legend>
+
+                            <div class="mb-3">
+                                <label for="meno" class="form-label">
+                                    Meno <span class="text-danger">*</span>
+                                </label>
+                                <input type="text" id="meno" class="form-control custom-input"
+                                    placeholder="Meno Priezvisko" required minlength="2" />
+                                <span class="invalid-hint">Meno musí mať aspoň 2 znaky.</span>
+                            </div>
+
+                            <div class="mb-3">
+                                <label for="email" class="form-label">
+                                    E-mail <span class="text-danger">*</span>
+                                </label>
+                                <input type="email" id="email" class="form-control custom-input"
+                                    placeholder="priklad@priklad.sk" required />
+                                <span class="invalid-hint">Zadaj platný e-mail.</span>
+                            </div>
+
+                            <div class="mb-3">
+                                <label for="telefon" class="form-label">Telefón</label>
+                                <input type="tel" id="telefon" class="form-control custom-input" pattern="[0-9]{9,10}"
+                                    placeholder="0901234567" />
+                                <span class="invalid-hint">Telefón musí mať 9–10 číslic.</span>
+                            </div>
+                        </fieldset>
+
+                        <!-- FIELDSET 2: Objednávka -->
+                        <fieldset class="mb-4">
+                            <legend class="fieldset-legend">Detaily objednávky</legend>
+
+                            <div class="mb-3">
+                                <label for="typ" class="form-label">
+                                    Typ kabelky <span class="text-danger">*</span>
+                                </label>
+                                <select id="typ" class="form-select custom-input" required>
+                                    <option value="" disabled selected>Vyber možnosť</option>
+                                    <option value="crossbody">Crossbody</option>
+                                    <option value="mini">Mini kabelka</option>
+                                    <option value="shopper">Shopper</option>
+                                    <option value="custom">Vlastný dizajn</option>
+                                </select>
+                                <span class="invalid-hint">Vyber typ kabelky.</span>
+                            </div>
+
+                            <div class="mb-3">
+                                <label class="form-label">
+                                    Preferovaný spôsob kontaktu <span class="text-danger">*</span>
+                                </label>
+
+                                <div class="d-flex flex-column gap-3">
+
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="radio" name="kontaktSpôsob"
+                                            id="radio-email" value="email" checked />
+                                        <label class="form-check-label" for="radio-email">E-mail</label>
+
+                                        <div id="box-email" class="mt-2">
+                                            <input type="email" class="form-control custom-input"
+                                                placeholder="Tvoj email" name="kontakt_email">
+                                            <span class="invalid-hint">Zadaj e-mail.</span>
+                                        </div>
+                                    </div>
+
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="radio" name="kontaktSpôsob"
+                                            id="radio-telefon" value="telefon" />
+                                        <label class="form-check-label" for="radio-telefon">Telefón</label>
+
+                                        <div id="box-telefon" class="mt-2">
+                                            <input type="text" class="form-control custom-input"
+                                                placeholder="Tvoje číslo" name="kontakt_telefon">
+                                            <span class="invalid-hint">Zadaj telefón.</span>
+                                        </div>
+                                    </div>
+
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="radio" name="kontaktSpôsob"
+                                            id="radio-instagram" value="instagram" />
+                                        <label class="form-check-label" for="radio-instagram">Instagram</label>
+
+                                        <div id="box-instagram" class="mt-2">
+                                            <input type="text" class="form-control custom-input"
+                                                placeholder="Tvoj Instagram" name="kontakt_instagram">
+                                            <span class="invalid-hint">Zadaj Instagram.</span>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+
+                            <div class="mb-3">
+                                <label for="sprava" class="form-label">
+                                    Správa <span class="text-danger">*</span>
+                                </label>
+                                <textarea id="sprava" class="form-control custom-input" rows="4" maxlength="200"
+                                    minlength="10"
+                                    placeholder="Opíšte svoju predstavu — farbu, veľkosť, prípadný vzor výšivky…"
+                                    required></textarea>
+                                <div class="form-text">
+                                    Zostávajúce znaky: <span id="pocitadlo-znakov">200</span>
+                                </div>
+                                <span class="invalid-hint">Správa musí mať aspoň 10 znakov.</span>
+                            </div>
+
+                            <div class="mb-3 form-check">
+                                <input type="checkbox" id="suhlas" class="form-check-input" required />
+                                <label class="form-check-label" for="suhlas">
+                                    Súhlasím so spracovaním osobných údajov.
+                                    <span class="text-danger">*</span>
+                                </label>
+                                <span class="invalid-hint d-block">Súhlas je povinný.</span>
+                            </div>
+                        </fieldset>
+
+                        <button type="submit" class="btn-submit w-100">
+                            Odoslať správu
+                        </button>
+                    </form>
+                </div>
+
+                <!-- KONTAKTNÉ ÚDAJE -->
+                <div class="col-12 col-lg-5">
+                    <div class="contact-box shadow p-4 rounded mb-4">
+                        <h3 class="mb-4" style="font-family: var(--font-display); color: var(--color-espresso);">
+                            Kontaktné údaje
+                        </h3>
+                        <p>
+                            <strong>Adresa:</strong><br />
+                            VK Studio, Hlavná 12<br />
+                            040 01 Košice
+                        </p>
+                        <p>
+                            <strong>E-mail:</strong><br />
+                            <a href="mailto:info@vysivane-kabelky.sk">info@vysivane-kabelky.sk</a>
+                        </p>
+                        <p>
+                            <strong>Telefón:</strong><br />
+                            <a href="tel:+421900123456">+421 900 123 456</a>
+                        </p>
+                        <hr style="border-color: var(--color-sand); opacity: 0.5;" />
+                        <p class="section-text mb-0">
+                            Odpovedáme do 48 hodín. Pri urgentných objednávkach prosím
+                            uveďte požadovaný termín priamo v správe.
+                        </p>
+                    </div>
+
+                    <div class="contact-box shadow p-4 rounded">
+                        <h4 class="mb-3"
+                            style="font-family: var(--font-display); color: var(--color-espresso); font-size: 1.3rem;">
+                            Otváracie hodiny
+                        </h4>
+                        <table class="w-100 section-text" style="border-collapse: collapse;">
+                            <tr>
+                                <td class="py-1"><strong>Po – Pi</strong></td>
+                                <td class="py-1 text-end">9:00 – 17:00</td>
+                            </tr>
+                            <tr>
+                                <td class="py-1"><strong>Sobota</strong></td>
+                                <td class="py-1 text-end">10:00 – 14:00</td>
+                            </tr>
+                            <tr>
+                                <td class="py-1"><strong>Nedeľa</strong></td>
+                                <td class="py-1 text-end">Zatvorené</td>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+    </main>
+
+    <!-- TOAST -->
+    <div class="toast-container position-fixed bottom-0 end-0 p-3">
+        <div id="kontaktToast" class="toast align-items-center text-bg-dark border-0" role="alert">
+            <div class="d-flex">
+                <div class="toast-body">✦ Správa bola úspešne odoslaná. Ďakujeme!</div>
+                <button type="button" class="btn-close btn-close-white me-2 m-auto" data-bs-dismiss="toast"></button>
+            </div>
+        </div>
+    </div>
+
+    <!-- FOOTER -->
+    <footer class="site-footer py-5">
+        <div class="container text-center">
+            <p class="footer-brand">✦ VK Studio</p>
+            <p class="footer-tagline">
+                Vyšívané kabelky z macrame priadze — s láskou a precíznosťou.
+            </p>
+            <div class="footer-links">
+                <a href="../index.html#o-teme">O téme</a>
+                <a href="../index.html#kolekcia">Kolekcia</a>
+                <a href="../index.html#galeria">Galéria</a>
+                <a href="o-nas.html">O nás</a>
+                <a href="kontakt.html">Kontakt</a>
+            </div>
+            <p class="footer-copy">&copy; 2026 VK Studio. Všetky práva vyhradené.</p>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="../assets/js/script.js"></script>
+</body>
+
+</html>

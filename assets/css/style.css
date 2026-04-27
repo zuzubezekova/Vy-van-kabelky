@@ -5,39 +5,45 @@
 
 /* Bootstrap premenné farebnej schémy */
 :root {
-  --bs-primary: #5c3d2e;
-  --bs-secondary: #c8a97e;
-  --bs-body-bg: #f5efe6;
-  --bs-body-color: #211e3a;
+  /* — Pozadie — */
+  --color-cream:           #f5efe6;   /* hlavné pozadie stránky */
+  --color-cream-dark:      #ede3d4;   /* tmavšie pozadie, striedavé sekcie */
+  --color-white-warm:      #fdfaf6;   /* pozadie kariet, formulárov */
 
-  --color-cream: #f5efe6;
-  --color-cream-dark: #ede3d4;
-  --color-white-warm: #fdfaf6;
+  /* — Akcenty — */
+  --color-latte:           #c8a97e;   /* hlavný akcentový odtieň */
+  --color-latte-dark:      #a07850;   /* hover akcenty, zvýraznenia */
+  --color-sand:            #d4bfa0;   /* jemný odtieň, ornamenty, okraje */
 
-  --color-latte: #c8a97e;
-  --color-latte-dark: #a07850;
-  --color-sand: #d4bfa0;
+  /* — Espresso / primárna — */
+  --color-espresso:        #5c3d2e;   /* hlavičky, navbar, CTA, footer */
+  --color-bark:            #8b6550;   /* hover na espresso prvkoch */
 
-  --color-espresso: #5c3d2e;
-  --color-bark: #8b6550;
+  /* — Text — */
+  --color-ink:             #211e3a;   /* hlavný text obsahu */
+  --color-mud:             #7a6355;   /* sekundárny / popisný text */
 
-  --color-ink: #211e3a;
-  --color-mud: #7a6355;
+  /* — Špeciálne — */
+  --color-error:           #a0522d;   /* chybový text */
+  --color-alert-bg:        #f0e8d8;   /* pozadie úspešného alertu */
+  --color-nav-dark:        #110a06;   /* navbar v dark mode */
+  --color-nav:             #d4bfa0;   /* navbar text*/
 
-  --color-error: #a0522d;
-  --color-alert-bg: #f0e8d8;
+  /* — Tiene — */
+  --color-shadow:          rgba(92,61,46,0.10);
+  --color-shadow-hover:    rgba(92,61,46,0.16);
+  --color-shadow-btn:      rgba(92,61,46,0.25);
+  --color-latte-glow:      rgba(200,169,126,0.2);
 
-  --color-shadow: rgba(92, 61, 46, 0.1);
-  --color-shadow-hover: rgba(92, 61, 46, 0.16);
-  --color-shadow-btn: rgba(92, 61, 46, 0.25);
-  --color-latte-glow: rgba(200, 169, 126, 0.2);
+  /* — Písmo — */
+  --font-display: 'Cormorant Garamond', serif;
+  --font-body:    'Jost', sans-serif;
 
-  --font-display: "Cormorant Garamond", serif;
-  --font-body: "Jost", sans-serif;
-
-  --radius: 12px;
-  --shadow: 0 4px 24px var(--color-shadow);
+  /* — Rozloženie — */
+  --radius:    12px;
+  --shadow:    0 4px 24px var(--color-shadow);
   --shadow-lg: 0 8px 40px var(--color-shadow-hover);
+
    /* ===== GRADIENT LIGHT ===== */
    --grad-0: rgba(83, 61, 52, 0.55);
   --grad-40: rgba(101, 78, 62, 0.45);
@@ -59,11 +65,11 @@ body.dark-mode {
 
   --color-ink: #f0e4d0;
   --color-mud: #b0906a;
-  /* ===== GRADIENT DARK ===== */
+
+   /* ===== GRADIENT DARK ===== */
    --grad-0: rgba(197, 143, 120, 0.75);  /* espresso */
   --grad-40: rgba(203, 153, 119, 0.65); /* bark */
   --grad-100: rgba(245, 235, 220, 0.55); /* latte */
-
 }
 
 /* BASE */
@@ -72,10 +78,12 @@ body.dark-mode {
 *::after {
   box-sizing: border-box;
 }
+
 ::placeholder {
   color: var(--color-mud) !important;
   opacity: 1 !important;
 }
+
 html {
   scroll-behavior: smooth;
 }
@@ -100,6 +108,7 @@ a {
 a:hover {
   color: var(--color-espresso);
 }
+
 select {
   color: var(--color-espresso) !important;
 }
@@ -109,6 +118,20 @@ option:disabled {
 option {
   color: var(--color-espresso);
 }
+
+textarea {
+  color: var(--color-espresso) !important;
+}
+.form-text{
+    color: var(--color-mud) !important;
+}
+
+#box-email,
+#box-telefon,
+#box-instagram {
+  display: none;
+}
+
 /* TYPO */
 .section-tag {
   display: inline-block;
@@ -156,7 +179,6 @@ option {
   display: flex;
   align-items: center;
   justify-content: center;
-
   /* POZADIE FOTKA + GRADIENT OVERLAY */
   background:
     linear-gradient(
@@ -170,7 +192,6 @@ option {
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-
   overflow: hidden;
 }
 
@@ -335,10 +356,10 @@ option {
   transform: translateY(-6px);
   box-shadow: var(--shadow-lg);
 }
-/* Card body pozadie podľa farebnej schémy */
-.card-body {
-  background-color: var(--color-white-warm) !important;
-  color: var(--color-ink);
+
+.card-body{
+    background: var(--color-white-warm) !important;
+    color: var(--color-ink) !important;
 }
 
 /* CAROUSEL */
@@ -388,6 +409,47 @@ option {
   box-shadow: 0 0 0 3px var(--color-latte-glow);
 }
 
+/*ACCORDION */
+/* Accordion item */
+.accordion-item {
+  background-color: var(--color-white-warm);
+  border-color: var(--color-sand);
+}
+
+/* Header */
+.accordion-button {
+  background-color: var(--color-cream);
+  color: var(--color-espresso);
+}
+
+/* Hover */
+.accordion-button:hover {
+  background-color: var(--color-cream-dark);
+  color: var(--color-bark);
+}
+
+/* Active (open) */
+.accordion-button:not(.collapsed) {
+  background-color: var(--color-latte);
+  color: var(--color-white-warm);
+}
+
+/* Arrow */
+.accordion-button::after {
+  filter: brightness(0.6);
+}
+
+/* Body */
+.accordion-body {
+  background-color: var(--color-white-warm);
+  color: var(--color-ink);
+}
+
+/* Text */
+.section-text {
+  color: var(--color-mud);
+}
+
 /* CSS VALIDATION */
 .custom-input:invalid:focus {
   border-color: var(--color-error);
@@ -433,16 +495,22 @@ option {
 
 /* CONTACT BOX */
 .contact-box {
-  background: var(--color-white-warm);
+  background-color: var(--color-white-warm);
 }
 
 /* FOOTER */
 .site-footer {
-  background: var(--color-espresso);
+  background-color: var(--color-espresso) !important;
   color: var(--color-sand) !important;
-} 
-.site-footer p {color: var(--color-sand) !important;} 
-.site-footer a {color: var(--color-sand) !important;} 
+}
+
+.site-footer a {
+  color: var(--color-sand) !important;
+}
+
+.site-footer p {
+  color: var(--color-sand) !important;
+}
 
 .footer-brand {
   font-family: var(--font-display);
