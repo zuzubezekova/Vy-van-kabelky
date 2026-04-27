@@ -63,7 +63,10 @@ body.dark-mode {
 *::after {
   box-sizing: border-box;
 }
-
+::placeholder {
+  color: var(--color-mud) !important;
+  opacity: 1 !important;
+}
 html {
   scroll-behavior: smooth;
 }
@@ -88,7 +91,15 @@ a {
 a:hover {
   color: var(--color-espresso);
 }
-
+select {
+  color: var(--color-espresso) !important;
+}
+option:disabled {
+  color: var(--color-mud);
+}
+option {
+  color: var(--color-espresso);
+}
 /* TYPO */
 .section-tag {
   display: inline-block;
@@ -306,6 +317,11 @@ a:hover {
   transform: translateY(-6px);
   box-shadow: var(--shadow-lg);
 }
+/* Card body pozadie podľa farebnej schémy */
+.card-body {
+  background-color: var(--color-white-warm) !important;
+  color: var(--color-ink);
+}
 
 /* CAROUSEL */
 .carousel img {
@@ -405,8 +421,10 @@ a:hover {
 /* FOOTER */
 .site-footer {
   background: var(--color-espresso);
-  color: var(--color-sand);
-}
+  color: var(--color-sand) !important;
+} 
+.site-footer p {color: var(--color-sand) !important;} 
+.site-footer a {color: var(--color-sand) !important;} 
 
 .footer-brand {
   font-family: var(--font-display);
